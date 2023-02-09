@@ -1,0 +1,130 @@
+.App {
+  font-family: sans-serif;
+  padding: 0 20px;
+}
+
+h2 {
+  margin: 0;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+#customer-selection {
+  width: 450px;
+  padding: 8px;
+}
+
+.title {
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.container__accounts {
+  display: flex;
+  column-gap: 20px;
+}
+
+.account {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 100px;
+  border-radius: 5px;
+}
+
+.account .title {
+  background-color: rgb(234, 234, 234);
+  border: 1px solid #0085f6f5;
+  padding: 10px 15px;
+  border-radius: 5px 5px 0 0;
+}
+
+.account .amount {
+  display: grid;
+  align-items: center;
+  text-align: end;
+  padding: 10px 15px;
+  border-radius: 0 0 5px 5px;
+  color: #0085f6f5;
+  border: 1px solid #118dfaf5;
+  border-top: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  height: 100%;
+}
+
+.tranfer__amount {
+  width: 700px;
+  border-radius: 5px;
+  padding: 8px;
+  border: 1px solid #606868e0;
+  margin: 15px 0;
+}
+
+.tranfer__amount::placeholder {
+  color: black;
+  opacity: 1.5;
+  font-weight: 700;
+}
+
+.tranfer__amount:focus {
+  border: none;
+  outline: none;
+  border: 1px solid #606868e0;
+}
+
+#transfer {
+  display: flex;
+  flex-direction: column;
+}
+
+.container__selects {
+  display: flex;
+  column-gap: 3rem;
+}
+
+select {
+  border: none;
+  display: hidden;
+  border-radius: 5px;
+  padding: 10px;
+  outline: 1px solid #606868e0;
+}
+
+select:focus {
+  color: white;
+  background-color: #606868e0;
+  transition: 0.5s all ease;
+  border-radius: 5px;
+}
+
+select:focus option {
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.transfer-confirmation {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.confirmation__btn {
+  font-family: sans-serif !important;
+  background-color: #0085f6f5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px;
+  transition: 0.5s all ease;
+}
+
+.confirmation__btn:hover {
+  background-color: #0069c5f5;
+  cursor: pointer;
+}
